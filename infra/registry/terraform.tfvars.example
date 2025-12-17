@@ -1,0 +1,10 @@
+# AWS region
+aws_region = "us-east-1"
+
+# Repository names (optional, defaults are already set)
+# backend_repo_name = "mission-control-backend"
+# frontend_repo_name = "mission-control-frontend"
+
+# Image settings
+# image_tag_mutability = "MUTABLE"
+# scan_on_push = true

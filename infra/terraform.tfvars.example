@@ -1,0 +1,22 @@
+# Proxmox Configuration
+proxmox_endpoint  = "https://10.0.10.71:8006"
+proxmox_api_token = "user@pam!tokenid=your-secret-token-here"
+
+# Network Configuration (Update these to match your network)
+gateway = "10.0.96.1"
+vm_ips = [
+  "10.0.96.10/24",  # k8s-master
+  "10.0.96.11/24",  # k8s-worker-1
+  "10.0.96.12/24"   # k8s-worker-2
+]
+
+# SSH Key (paste your public key)
+ssh_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDi39pD9pgJqgp/XKutfIJtQ/UBWGim8Mn5M052ybIJ806y8WBt9gTBdQM+YskPESRQpt+rk9YAg7s1EwTh8HBQcOItWhzT0sFX50vB+9C7B4cvkXk56RDEd1AXKvCrgNmnV3yog4rTrfaNmsqdJefcCt5EIsOMXr1dFcR/eR1obsTKQhsweKe/Y/vd/EdXHrX6j2dxQZwbM9QzddPINeF48f14oBroUq9R3X1nQyxoqhcsdcJNc16WGw8UilTT/w4inSbKtbXq4mleOLag1JY9do5hoN4VnMd8eCK6kdUc4RiyDLwh0dAd4FPgbWrxZGirTjEZc6h+2+jtBhD6pP918Awtpdv/0/sNPAJSPDQNX1M8HIt9rVW6OCNhAomLz1hH9FpwKxoFFpOun1IGpN0bZYcbD7Mq3Lgdd7ZJQ9BG/r0RDiufdBpstGHPUc9r73Wuugt6A/y8J/QEdBHHNrHKRkdNw+3/Uc8MFifqr+Mx5Tetlc2G9IJrNFZWPUdK3bcm9hdaK8glZWqP2V79Cs18i2yP+qk190qT2RtfPZY0cjlLj3n6VagIqxZsNcS3FNvLEiSd1QGqDpEM/fl1sDP7xY3WKI0+2TBOluIZfgmA7svKnlFISksY+y3+DFaIAc0uRHjiJUxLJDxX0AH6WPS7OIIlJLUhwI1OnOhDftx5Ww== katar711@school.lu"
+
+# VM Password
+vm_password = "test..123"
+
+# VM Resources (Optional - defaults are already set)
+# vm_cpu_cores = 2
+# vm_memory    = 8192
+# vm_disk_size = 15

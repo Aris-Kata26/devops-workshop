@@ -1,0 +1,25 @@
+# Proxmox Jump Host
+Host proxmox
+    HostName 10.0.10.71
+    User root
+    
+# Kubernetes Master Node
+Host k8s-master
+    HostName 10.0.96.10
+    User ubuntu
+    ProxyJump proxmox
+    StrictHostKeyChecking no
+    
+# Kubernetes Worker 1
+Host k8s-worker-1
+    HostName 10.0.96.11
+    User ubuntu
+    ProxyJump proxmox
+    StrictHostKeyChecking no
+    
+# Kubernetes Worker 2
+Host k8s-worker-2
+    HostName 10.0.96.12
+    User ubuntu
+    ProxyJump proxmox
+    StrictHostKeyChecking no
